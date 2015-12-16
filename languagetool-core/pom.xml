@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.languagetool</groupId>
         <artifactId>languagetool-parent</artifactId>
-        <version>3.2-SNAPSHOT</version>
+        <version>3.2-mindmaps-modified-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -33,6 +33,14 @@
             <roles><role>Maintainer</role></roles>
         </developer>
     </developers>
+
+    <distributionManagement>
+        <repository>
+            <id>development-snapshots</id>
+            <name>Development Snapshots</name>
+            <url>http://maven.internal.mindmaps.io:8082/nexus/content/repositories/development-snapshots/</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
@@ -103,6 +111,11 @@
         </dependency>
         <dependency>
             <groupId>org.carrot2</groupId>
+            <artifactId>morfologik-fsa-builders</artifactId>
+            <version>${morfologik.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.carrot2</groupId>
             <artifactId>morfologik-speller</artifactId>
             <version>${morfologik.version}</version>
         </dependency>
@@ -110,12 +123,6 @@
             <groupId>org.carrot2</groupId>
             <artifactId>morfologik-stemming</artifactId>
             <version>${morfologik.version}</version>
-        </dependency>
-        <dependency>
-            <!-- needed for building the Morfologik dict at runtime (for ignore.txt) -->
-            <groupId>com.carrotsearch</groupId>
-            <artifactId>hppc</artifactId>
-            <version>0.6.1</version>
         </dependency>
         <dependency>
             <groupId>net.loomchild</groupId>

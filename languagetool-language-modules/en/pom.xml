@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.languagetool</groupId>
         <artifactId>languagetool-parent</artifactId>
-        <version>3.2-SNAPSHOT</version>
+        <version>3.2-mindmaps-modified-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     
@@ -86,20 +86,20 @@
             <version>1.5</version>
         </dependency>
 
-    <dependency>
-            <!-- see http://stackoverflow.com/questions/174560/sharing-test-code-in-maven#174670 -->
-            <groupId>org.languagetool</groupId>
-            <artifactId>languagetool-core</artifactId>
-            <version>${languagetool.version}</version>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
+    <!--<dependency>-->
+            <!--&lt;!&ndash; see http://stackoverflow.com/questions/174560/sharing-test-code-in-maven#174670 &ndash;&gt;-->
+            <!--<groupId>org.languagetool</groupId>-->
+            <!--<artifactId>languagetool-core</artifactId>-->
+            <!--<version>${languagetool.version}</version>-->
+            <!--<type>test-jar</type>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>junit</groupId>-->
+            <!--<artifactId>junit</artifactId>-->
+            <!--<version>${junit.version}</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
 </project>
